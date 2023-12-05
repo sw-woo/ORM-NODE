@@ -1,0 +1,107 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>샘플 테스트 웹페이지</title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1>회원가입</h1>
+    <form>
+      아이디:<input type="text" /> <br />
+      암호:<input type="password" /> <br />
+      이름:<input type="text" />
+    </form>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>샘플 로그인 웹페이지</title>
+    <link href="../public/common/sample.css" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+
+      form button {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        box-sizing: border-box;
+      }
+
+      form button {
+        background-color: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: rgb(30, 101, 34);
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <img src="./images/user.jpeg" />
+      <h1>회원가입</h1>
+      <label for="username" id="email">아이디:</label>
+      <input type="text" id="email" name="email" /><br />
+
+      <label for="password" id="password">암호:</label>
+      <input type="password" id="password" name="password" /><br />
+
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" /><br />
+
+      <button onclick="fnValidation()">저장</button>
+    </form>
+
+    <!-- 클라이언트 자바스크립트 구현 영역 -->
+    <script src="../public/common/sample.js"></script>
+    <script>
+      //         function fnValidation() {
+      //   //만약 html 문서의 email 아이디가 있다면
+      //   if (document.getElementById("email").value == "") {
+      //     document.getElementById("email").focus();
+      //     return false;
+      //   }
+      //   if (document.getElementById("password").value == "") {
+      //     document.getElementById("password").focus();
+      //     return false;
+      //   }
+      // }
+    </script>
+  </body>
+</html>
