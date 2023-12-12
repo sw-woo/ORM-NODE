@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>게시글 목록 페이지</title>
+  </head>
+  <body>
+    <h1>게시글 목록 페이지</h1>
+    <a href="/articles/create">신규 게시글 작성</a>
+    <table>
+      <thead>
+        <tr>
+          <th>글번호</th>
+          <th>제목</th>
+          <th>내용</th>
+          <th>조회수</th>
+          <th>아이피주소</th>
+          <th>게시여부</th>
+          <th>작성자</th>
+          <th>작성일자</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for(var i=0;i<articles.length;i++) {%>
+            <tr>
+                <td>
+                    <a href="/articles/modify<%=articles[i].articelIdx %>">
+                    <%=articles[i].articelIdx %>
+                    </a></td>
+                <td>
+                    <a href="/articles/modify/<%=articles[i].articelIdx %>?title=<%=articles[i].title %>&contents=<%=articles[i].contents %>">
+                    <%=articles[i].title %>
+                    </a>
+                </td>
+                <td><%=articles[i].contents %></td>
+                <td><%=articles[i].view_cnt %></td>
+                <td><%=articles[i].display %></td>
+                <td><%=articles[i].ipaddress %></td>
+                <td><%=articles[i].registDate %></td>
+                <td><%=articles[i].registMemberId %></td>
+            </tr>
+        <% } %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th></th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
