@@ -1,5 +1,4 @@
 body {
-<<<<<<< HEAD
   font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
   margin: 0;
@@ -44,12 +43,4 @@ form button {
 
 form button:hover {
   background-color: rgb(30, 101, 34);
-=======
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
->>>>>>> cca7292 (Day10)
 }
