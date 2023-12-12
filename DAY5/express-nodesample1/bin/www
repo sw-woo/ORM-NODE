@@ -4,6 +4,19 @@
  * Module dependencies.
  */
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+//개발용 Node Express 프로젝트의 최초 시작 모듈로
+//주로 개발환경에서의 노드벡엔드앱을 서비스하기 위한 로컬 웹서버환경을 구성해주고
+//노드벡엔드 앱 서비스 서버 환경을 제공합니다.
+
+//웹서버를 통해 서비스할 실제 노드벡엔드 앱 파일인 (app.js)
+var app = require("../app");
+var debug = require("debug")("express-nodesample1:server");
+var http = require("http");
+=======
+>>>>>>> day10
 // 개발용 Node Express 프로젝트의 최초 시작 모듈로
 // 주로 개발환경에서의 노드 백엔앱을 서비스하기 위한 로컬 웹서버 환경을 구성해주고
 // 노드 백엔드 앱 서비스 서버 환경을 제공해준다.
@@ -16,19 +29,40 @@ var debug = require('debug')('express-nodesample1:server');
 
 // 노드 프레임워크내에서 기본제공되는 http 웹서버 패키지를 참조합니다. (중요!!)
 var http = require('http');
+<<<<<<< HEAD
+=======
+>>>>>>> cca7292 (Day10)
+>>>>>>> day10
 
 /**
  * Get port from environment and store in Express.
  */
 
+<<<<<<< HEAD
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+=======
+<<<<<<< HEAD
+var port = normalizePort(process.env.PORT || "3000");
+app.set("port", port);
+=======
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+>>>>>>> cca7292 (Day10)
+>>>>>>> day10
 
 /**
  * Create HTTP server.
  */
 
+<<<<<<< HEAD
 // 웹서버 객체를 생성
+=======
+<<<<<<< HEAD
+=======
+// 웹서버 객체를 생성
+>>>>>>> cca7292 (Day10)
+>>>>>>> day10
 var server = http.createServer(app);
 
 /**
@@ -36,8 +70,18 @@ var server = http.createServer(app);
  */
 
 server.listen(port);
+<<<<<<< HEAD
 server.on('error', onError);
 server.on('listening', onListening);
+=======
+<<<<<<< HEAD
+server.on("error", onError);
+server.on("listening", onListening);
+=======
+server.on('error', onError);
+server.on('listening', onListening);
+>>>>>>> cca7292 (Day10)
+>>>>>>> day10
 
 /**
  * Normalize a port into a number, string, or false.
@@ -64,6 +108,25 @@ function normalizePort(val) {
  */
 
 function onError(error) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  if (error.syscall !== "listen") {
+    throw error;
+  }
+
+  var bind = typeof port === "string" ? "Pipe " + port : "Port " + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case "EACCES":
+      console.error(bind + " requires elevated privileges");
+      process.exit(1);
+      break;
+    case "EADDRINUSE":
+      console.error(bind + " is already in use");
+=======
+>>>>>>> day10
   if (error.syscall !== 'listen') {
     throw error;
   }
@@ -80,6 +143,10 @@ function onError(error) {
       break;
     case 'EADDRINUSE':
       console.error(bind + ' is already in use');
+<<<<<<< HEAD
+=======
+>>>>>>> cca7292 (Day10)
+>>>>>>> day10
       process.exit(1);
       break;
     default:
@@ -93,8 +160,19 @@ function onError(error) {
 
 function onListening() {
   var addr = server.address();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  var bind = typeof addr === "string" ? "pipe " + addr : "port " + addr.port;
+  debug("Listening on " + bind);
+=======
+>>>>>>> day10
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+<<<<<<< HEAD
+=======
+>>>>>>> cca7292 (Day10)
+>>>>>>> day10
 }

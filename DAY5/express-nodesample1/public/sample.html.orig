@@ -1,0 +1,113 @@
+<<<<<<< HEAD
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <title>샘플 테스트 웹페이지</title>
+    <style>
+
+    </style>
+  </head>
+
+  <body>
+    <h1>회원가입</h1>
+    <form>
+      아이디:<input type="text" /> <br />
+      암호:<input type="password" /> <br />
+      이름:<input type="text" />
+    </form>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>샘플 로그인 웹페이지</title>
+    <link href="./common/sample.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <img src="./images/user.jpeg" />
+      <h1>회원가입</h1>
+      <label for="username" id="email">아이디:</label>
+      <input type="text" id="email" name="email" /><br />
+
+      <label for="password" id="password">암호:</label>
+      <input type="password" id="password" name="password" /><br />
+
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" /><br />
+
+      <button onclick="fnValidation()">저장</button>
+    </form>
+
+    <!-- 클라이언트 자바스크립트 구현 영역 -->
+    <script src="./common/sample.js"></script>
+    <script>
+      //         function fnValidation() {
+      //   //만약 html 문서의 email 아이디가 있다면
+      //   if (document.getElementById("email").value == "") {
+      //     document.getElementById("email").focus();
+      //     return false;
+      //   }
+      //   if (document.getElementById("password").value == "") {
+      //     document.getElementById("password").focus();
+      //     return false;
+      //   }
+      // }
+    </script>
+  </body>
+</html>
+=======
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>샘플 테스트 웹페이지</title>
+
+        <!-- html 태그 스타일 처리 영역 -->
+        <!-- <style>
+            input {
+                width: 300px;
+                height: 20px;
+                background-color: #ababab5c;
+                margin: 1px;
+            }
+        </style> -->
+        <link rel="stylesheet" href="./common/sample.css">
+    </head>
+
+    <body>
+        <h1>회원가입</h1>
+        <img src="./images/user.jpg" alt="웃고있는 여자 이미지">        
+        <form>
+            아이디:<input type="text" id="email"> <br/>
+            암호:<input type="password" id="password"> <br/>
+            이름:<input type="text"> <br/>
+            <button onclick="fnValidation()">저장</button>
+        </form>
+
+        <!-- 클라이언트 자바스크립트 구현 영역 -->
+        <script src="./common/sample.js"></script>
+
+        <script>
+
+            // 사용자 입력값 유효성 체크함수
+            // function fnValidation() {
+
+            //     if(document.getElementById("email").value == "") {
+            //         alert("메일주소 아이디를 입력해주세요.");
+            //         document.getElementById("email").focus();
+            //         return false;
+            //     }
+                
+            //     if(document.getElementById("password").value == "") {
+            //         alert("사용자 암호를 입력해주세요.");
+            //         document.getElementById("password").focus();
+            //         return false;
+            //     }
+            // }
+
+        </script>
+    </body>
+</html>
+>>>>>>> cca7292 (Day10)

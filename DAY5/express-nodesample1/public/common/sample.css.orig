@@ -1,0 +1,61 @@
+<<<<<<< HEAD
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+form img {
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+form button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: rgb(30, 101, 34);
+}
+=======
+input {
+    width: 300px;
+    height: 20px;
+    background-color: #ababab5c;
+    margin: 1px;
+}
+>>>>>>> cca7292 (Day10)
