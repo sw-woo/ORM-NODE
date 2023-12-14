@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 계정 수정 웹페이지</title>
+  </head>
+  <body>
+    <h1>사용자 계정 수정 웹페이지</h1>
+
+    <form action="/member/modify" method="post">
+      아이디: <input type="text" name="userId" /> <br />
+      비밀번호: <input type="password" name="userPassword" /> <br />
+      <input type="submit" value="저장" />
+      <a href="/member/list">사용자 생성 페이지</a>
+      <a href="/member/delete">사용자 삭제</a>
+    </form>
+  </body>
+</html>

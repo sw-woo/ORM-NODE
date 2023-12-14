@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title><%= pageTitle %></title>
+  </head>
+  <body>
+    <nav>
+      <a href="/login">로그인</a>
+      <a href="/login">로그아웃</a>
+      <a href="/entry">회원가입</a>
+      <a href="/find">비밀번호찾기</a>
+    </nav>
+    <div id="chat-container">
+      <h1>Welcome to the Chat Room</h1>
+
+      <div id="messages">
+        <!-- Messages will be displayed here -->
+      </div>
+
+      <form id="message-form">
+        <input
+          type="text"
+          id="message-input"
+          placeholder="Type your message..."
+        />
+        <button type="submit">보내기</button>
+      </form>
+    </div>
+
+    <script>
+      // Add your JavaScript for handling chat functionality
+      // This could include WebSocket connections, message handling, etc.
+    </script>
+  </body>
+</html>

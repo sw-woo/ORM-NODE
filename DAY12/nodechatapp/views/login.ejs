@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <h1>로그인 페이지</h1>
+
+    <!-- Your login form goes here -->
+    <form action="/login" method="post">
+      <!-- Login form fields -->
+      아이디
+      <input type="text" name="username" placeholder="Username" required />
+      <br />
+      비번
+      <input type="password" name="password" placeholder="Password" required />
+      <br />
+      <button type="submit">Login</button>
+      <br />
+      <a href="/find">비밀번호찾기</a>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메세지 웹페이지1</title>
+  </head>
+  <body>
+    <h1>메시지 웹페이지1</h1>
+
+    <form action="/message/modify" method="post">
+      아이디: <input type="text" name="userId" /> <br />
+      비밀번호: <input type="password" name="userPassword" /> <br />
+      <input type="submit" value="저장" />
+      <a href="/message/list">메세지 페이지</a>
+      <a href="/message/delete">메세지 삭제</a>
+    </form>
+  </body>
+</html>
