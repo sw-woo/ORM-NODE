@@ -48,4 +48,5 @@ router.post("/modify", async (req, res) => {
 router.get("/delete", async (req, res) => {
   res.redirect("/member/list");
 });
+
 module.exports = router;
