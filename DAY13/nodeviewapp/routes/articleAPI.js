@@ -180,6 +180,7 @@ router.post("/update", async (req, res) => {
 //단일 게시글 데이터 조회 반환 API 라우팅 메소드
 //http://localhost:3000/api/article/1
 router.get("/:aidx", async (req, res) => {
+  var articleAidx = req.params.aidx;
   //step1. API라우팅 메소드 반환형식 정의
   var apiResult = {
     code: 200,
@@ -189,23 +190,22 @@ router.get("/:aidx", async (req, res) => {
   //step2. 예외처리 구문..
   try {
     //step3. try블록안에 에러가 발생할수 있는 각종 개발자 코드 구현
-    const articles = [
-      {
-        article_id: 1,
-        board_type_code: 1,
-        title: "공지게시글 1번글입니다.",
-        contents: "공지게시글 1번 내용입니다.",
-        view_count: 10,
-        ip_address: "111,111,123,123",
-        is_display_code: 1,
-        reg_date: "2023-12-14",
-        reg_member_id: "sungwoo",
-      },
-    ];
+    const article = {
+      article_id: articleAidx,
+      board_type_code: 1,
+      title: "공지게시글 1번글입니다.",
+      contents: "공지게시글 1번 내용입니다.",
+      view_count: 10,
+      ip_address: "111,111,123,123",
+      is_display_code: 1,
+      article_Type_Code: 1,
+      reg_date: "2023-12-14",
+      reg_member_id: "sungwoo",
+    };
 
     //프론트엔드로 반환할 실제데이터 바인딩
     apiResult.code = 200;
-    apiResult.data = articles;
+    apiResult.data = article;
     apiResult.result = "OK";
   } catch (err) {
     //console.log(err.message);
@@ -221,8 +221,9 @@ router.get("/:aidx", async (req, res) => {
 });
 
 //단일 전체 게시글 삭제처리 API 조회 반환 라우팅 메소드
-//http://localhost:3000/api/article/all
+//http://localhost:3000/api/article/1
 router.delete("/:aidx", async (req, res) => {
+  //API라우팅 메소드 반환형식 정의
   var apiResult = {
     code: 200,
     data: [],
